@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankara | Wedding Organizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sankara<span>Wedding Organizer</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container hero-content">
+            <h1>Wujudkan Pernikahan Impian Anda</h1>
+            <p>SETIAP MOMEN BAHAGIA, KAMI RANGKAI DENGAN SEMPURNA</p>
+            <h2>#SankaraVowToLove</h2>
+            <a href="#contact" class="btn">Konsultasi Gratis</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-wrapper">
+                <div class="about-img">
+                    <img src="ALL MEMBER.jpeg" alt="Tentang Sankara">
+                </div>
+                <div class="about-text">
+                    <h3>Kisah Cinta Anda, Dedikasi Kami</h3>
+                    <p>Sankara Wedding Organizer adalah tim profesional dengan pengalaman bertahun-tahun dalam mengelola berbagai konsep pernikahan.</p>
+                    <p>Kami bekerja dengan detail, kreativitas, dan sepenuh hati demi menciptakan momen terbaik dalam hidup Anda.</p>
+                    <a href="#services" class="btn btn-secondary">Lihat Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <img src="pt1.jpeg" alt="MC & Photography" />
+                    <h3>MC & Photographer & Videographer</h3>
+                    <p>MC profesional yang memandu acara dengan hangat dan rapi. Foto dan video dibuat dengan kualitas terbaik, cinematic, dan penuh cerita.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="pt2.jpeg" alt="Wedding Planner" />
+                    <h3>Wedding Planner</h3>
+                    <p>Jasa perencanaan pernikahan dari konsep, venue, MUA, hingga detail penting lainnya.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="pt3.jpeg" alt="Wedding Content Creator" />
+                    <h3>Wedding Content Creator</h3>
+                    <p>Dokumentasi BTS (behind the scene) tanpa mengganggu kinerja fotografer.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>Silakan hubungi kami langsung melalui kontak di bawah ini untuk konsultasi gratis mengenai konsep, budget, dan paket pernikahan yang Anda inginkan.</p>
+                    
+                    <div class="contact-details">
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282262954038" target="_blank">082262954038</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://instagram.com/sankara.wo" target="_blank">@sankara.wo</a></p>
+                        <p><strong>Hashtag:</strong> #SankaraVowToLove</p>
+                    </div>
+                    
+                    <a href="https://wa.me/6282262954038" target="_blank" class="btn">Chat via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2026 Sankara Wedding Organizer.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+        const menuSpans = mobileMenu.querySelectorAll('span');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>
